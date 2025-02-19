@@ -1,0 +1,703 @@
+
+header {
+    background-color: #18abe0;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+header h1 {
+    margin: 0;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.side-nav {
+    width: 20%;
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    height: fit-content;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.side-nav ul {
+    list-style-type: none;
+    margin: 15px;
+    padding: 10px;
+}
+
+.side-nav ul li {
+    margin: 15px 0;
+}
+
+.side-nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.side-nav ul li a:hover {
+    background-color: #34495e;
+}
+
+.content {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-left: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input, select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #2c3e50;
+    color: white;
+    width: 300px;
+    font-size: 1rem;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 5px auto;
+}
+
+button:hover {
+    background-color: #34495e;
+    
+}
+
+.document-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.document-list li {
+    margin: 5px 0;
+}
+
+.document-link {
+    text-decoration: none;
+    color: #007bff;
+    display: flex;
+    align-items: center;
+}
+
+.document-link:hover {
+    text-decoration: underline;
+}
+
+.document-link::before {
+    content: '📄 ';
+    margin-right: 8px;
+    font-size: 1.2rem;
+}
+
+
+footer {
+    background-color: #18abe0;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: auto;
+}
+
+
+.errors {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.profile-link,
+.logout-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+}
+
+.profile-photo {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid #fff;
+}
+
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+
+
+.profile-link:hover,
+.logout-link:hover {
+    text-decoration: underline;
+}
+
+.profile-details {
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+}
+
+.profile-details table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.profile-details th, .profile-details td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.profile-details th {
+    text-align: left;
+    font-weight: bold;
+    color: #333;
+    width: 30%;
+}
+
+.profile-details td {
+    color: #555;
+}
+
+/* Styling the Success Message */
+.success-message {
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 20px auto;
+    width: 70%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.success-message h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.success-message p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.success-message .user-id {
+    font-weight: bold;
+    color: #0b6623;
+}
+
+.success-message .home-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #155724;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+}
+
+.success-message .home-link:hover {
+    background-color: #0b3d2e;
+}
+
+/* Button Container Styling */
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Details Table Styling */
+.details-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.details-table th, .details-table td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.details-table th {
+    font-weight: bold;
+    color: #333;
+    width: 30%;
+}
+
+.details-table td {
+    color: #555;
+}
+
+.success-message {
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.success-message h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.success-message p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.success-message .home-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #155724;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.success-message .home-link:hover {
+    background-color: #0b3d2e;
+}
+
+.login-form, .dashboard-content {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.top-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.top-nav ul li {
+    display: inline;
+}
+
+.top-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.top-nav ul li a:hover {
+    background-color: #155c7b;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #18abe0;
+    color: white;
+    padding: 10px 20px;
+}
+
+.header-container h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #18abe0;
+    color: white;
+    padding: 10px 20px;
+}
+
+.header-container h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.top-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.top-nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+.profile-link,
+.logout-link {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.profile-link:hover,
+.logout-link:hover {
+    background-color: #155c7b;
+}
+
+.profile-photo {
+    width: 40px; /* Smaller profile picture */
+    height: 40px; /* Adjust height to match width */
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+}
+.profile-photo-Details {
+    width: 200px; /* Smaller profile picture */
+    height: 200px; /* Adjust height to match width */
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+}
+
+
+.profile-link span {
+    font-size: 1rem; /* Adjust font size */
+}
+
+
+.error-title {
+    color: #e74c3c;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.error-message {
+    font-size: 1.2rem;
+    color: #ff0000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.home-link {
+    display: inline-block;
+    text-align: center;
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.home-link:hover {
+    background-color: #34495e;
+}
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.accept-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.reject-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.accept-button:hover {
+    background-color: #218838;
+}
+
+.reject-button:hover {
+    background-color: #c82333;
+}
+.container {
+    display: flex;
+    max-width: 900px;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+.side-nav ul li a:hover {
+    background-color: #34495e;
+}
+
+/* Search Form */
+.search-form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.search-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.search-form input, .search-form select {
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Task Table */
+.task-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.task-table th, .task-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.task-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    text-align: center;
+}
+
+.task-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.task-table td a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Hover Effect */
+.task-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Priority Styling */
+.priority.low {
+    background-color: #28a745;
+    color: white;
+    text-align: center;
+}
+
+.priority.medium {
+    background-color: #ffc107;
+    color: black;
+    text-align: center;
+}
+
+.priority.high {
+    background-color: #dc3545;
+    color: white;
+    text-align: center;
+}
+
+/* Status Styling */
+.status.pending {
+    font-style: italic;
+    background-color: #f4f4f4;
+}
+
+.status.in-progress {
+    font-weight: bold;
+    background-color: #d1ecf1;
+}
+
+.status.completed {
+    text-decoration: line-through;
+    border: 1px solid #28a745;
+}
+
+.login-nav {
+    width: 250px;
+    background-color: #b8dce9;
+    padding: 1rem;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+/* General Container */
+.task-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Task Details and Team Members Sections */
+.task-details, .team-members {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+.task-details h2, .team-members h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+/* Team Members Table */
+.team-members table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.team-members table th, .team-members table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.team-members table th {
+    background-color: #007BFF;
+    color: white;
+}
+
+.team-members table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Highlight "In Progress" Status */
+.team-members .in-progress {
+    font-weight: bold;
+    background-color: lightblue;
+}
+
+/* Team Member Image Styling */
+.team-members img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+}
+
+.team-members img:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border: 2px solid #007BFF;
+}

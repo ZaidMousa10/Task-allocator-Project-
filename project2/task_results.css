@@ -1,0 +1,95 @@
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+}
+
+.styled-table th, .styled-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+.styled-table th {
+    background-color: #007bff;
+    color: white;
+    position: relative;
+}
+
+.styled-table th button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.styled-table th button:hover {
+    text-decoration: underline;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #c7c7c7;
+}
+
+.styled-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Priority Styling */
+.low-priority {
+    background-color: green;
+    color: white;
+}
+
+.medium-priority {
+    background-color: yellow;
+    color: black;
+}
+
+.high-priority {
+    background-color: red;
+    color: white;
+}
+
+/* Status Styling */
+.pending {
+    font-style: italic;
+    background-color: gray;
+}
+
+.in-progress {
+    font-weight: bold;
+    background-color: lightblue;
+}
+
+.completed {
+    text-decoration: line-through;
+    border: 2px solid green;
+}
+.button {
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    height: 100vh;
+    padding: 2rem;
+    margin-top: auto; /* Pushes footer to the bottom */
+}
